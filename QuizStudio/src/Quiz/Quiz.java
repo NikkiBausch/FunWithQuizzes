@@ -3,7 +3,6 @@ package Quiz;
 import java.util.ArrayList;
 
 public class Quiz {
-    public static void main(String[] args){
         private ArrayList<Question> questions;
         private int finalScore;
         private int total;
