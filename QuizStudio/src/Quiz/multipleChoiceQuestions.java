@@ -30,6 +30,15 @@ public class multipleChoiceQuestions extends Question{
 
     @Override
     public int getAnswers() {
-        return 0;
+        Scanner answer = new Scanner(System.in);
+        System.out.println("\"What will your answer be? Enter the number of the option you believe is correct. " +
+                "For example, to select the first option, enter 1");
+        int userAnswer = answer.nextInt();
+        if(isCorrectAnswer(userAnswer)){
+            return 1;
+        }
+        else {
+            return 0;
+        }
     }
 }

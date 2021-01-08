@@ -1,12 +1,12 @@
 package Quiz;
 
 public abstract class Question {
-    private String query;
+    private String question;
     private int score;
 
 
-    public Question(String query, int score) {
-        this.query = query;
+    public Question(String question, int score) {
+        this.question = question;
 
         this.score = score;
 
@@ -14,7 +14,7 @@ public abstract class Question {
 
 
     public void displayQuestion(){
-        System.out.println(this.query);
+        System.out.println(this.question);
 
 
     }
@@ -26,12 +26,12 @@ public abstract class Question {
         return this.score;
     }
 
-    public String getQuery() {
-        return query;
+    public String getQuestion() {
+        return question;
     }
 
-    public void setQuery(String query) {
-        this.query = query;
+    public void setQuestion(String query) {
+        this.question = question;
     }
 
 
