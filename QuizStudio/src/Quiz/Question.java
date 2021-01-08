@@ -30,7 +30,7 @@ public abstract class Question {
         return question;
     }
 
-    public void setQuestion(String query) {
+    public void setQuestion(String question) {
         this.question = question;
     }
 
