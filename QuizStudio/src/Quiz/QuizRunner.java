@@ -6,9 +6,7 @@ import java.util.Arrays;
 public class QuizRunner {
     public static void main(String[] args){
         Quiz germanVocabQuiz = new Quiz(new ArrayList<>());
-        ArrayList<String>possibleAnswer1 = new ArrayList<>(Arrays.asList("der Hund", "die Decke", "die Katze", "das Schuh"));
-        ArrayList<Integer>correctAns1 = new ArrayList<>(Arrays.asList(1,3));
-        checkBoxChoiceQuestions newQuestion1 = new checkBoxChoiceQuestions("Which of these words are animals in German?", 2, possibleAnswer1, correctAns1);
+        trueOrFalseQuestions newQuestion1 = new trueOrFalseQuestions("True or false: Austria has one official language, 10 officially recognized regional languages, and 3 popularly spoken minority languages.", 1, true);
         germanVocabQuiz.addQuestion(newQuestion1);
 
         trueOrFalseQuestions newQuestion2 = new trueOrFalseQuestions(
