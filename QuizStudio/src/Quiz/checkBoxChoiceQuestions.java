@@ -23,13 +23,13 @@ public class checkBoxChoiceQuestions extends Question{
     }
 
     public int checkAnswers(ArrayList<Integer> check){
-        int answersCorrect = 0;
+        int score = 0;
         for (int i= 0; i< check.size(); i++){
             if (correctAnswers.contains(check.get(i))){
-                answersCorrect++;
+                score++;
             }
         }
-        return answersCorrect;
+        return score;
     }
 
     @Override

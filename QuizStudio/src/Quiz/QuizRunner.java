@@ -15,7 +15,7 @@ public class QuizRunner {
         ArrayList<String>posAns2 = new ArrayList<>(Arrays.asList("kochen,","haben", "schneiden,", "singen"));
 
         multipleChoiceQuestions newQuestion3 = new multipleChoiceQuestions("Which of these words means 'to cut' in German?", 1, posAns2,
-                2);
+                3);
         germanVocabQuiz.addQuestion(newQuestion3);
 
         germanVocabQuiz.runQuiz();
